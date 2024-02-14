@@ -1,16 +1,16 @@
 import random
-dictionary = open('/usr/share/dict/words', 'r')
-dict_list = dictionary.readline()
-dictionary.close()
+with open('/usr/share/dict/words', 'r') as dictionary:
+    dict_list = dictionary.read().splitlines()
 
-random_dict = []
+
 word_nums = int(input("How many words should I display?"))
 
 def random_dict():
-    for i in range(word_nums):
-        random_dict = random.choice(dict_list).strip()
-        random_dict.append(random_dict)
+    random_words = []
+    for n in range(word_nums):
+        random_word = random.choice(dict_list)
+        random_words.append(random_word)
 
-    random_string = ' '.join(random_dict)
+    random_string = ' '.join(random_words)
     return random_string
 print(random_dict())
