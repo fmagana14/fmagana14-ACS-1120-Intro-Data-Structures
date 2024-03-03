@@ -26,7 +26,7 @@ def display_histogram(word_freq):
         print(f"{word}: {freq}")
 
 # Read text from a file
-file_name = 'data/sample.txt'
+file_name = 'data/word.txt'
 text = read_text(file_name)
 
 # Tokenize the text into words, dismissing capitalization and punctuation
@@ -40,6 +40,7 @@ word_freq = count_word_frequency(words)
 
 # Display the word and its frequency in the terminal
 display_histogram(word_freq)
+
 
 
 

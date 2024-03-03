@@ -3,6 +3,7 @@ from flask import Flask
 
 
 app = Flask(__name__)
+source_text = 
 
 # TODO: Initialize your histogram, hash table, or markov chain here.
 # Any code placed here will run only once, when the server starts.
