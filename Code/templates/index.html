@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tweet Generator</title>
-</head>
-<body>
-    <blockquote>TODO: Replace this text with the sentence you generated!</blockquote>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tweet Generator</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background: #2f594a;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+      button {
+        background: #a6974b;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 20px;
+        width: 100px;
+        font-size: 15px;
+      }
+      button:hover {
+        background: #928357;
+      }
+      h1 {
+        color: #fff;
+        margin: 8px 0;
+      }
+      blockquote {
+        color: white;
+      }
+      #container {
+        background: #406e73;
+        max-width: 400px;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+      }
+    </style>
+    <div id="container">
+      <h1>Welcome to White Fang Lingo!</h1>
+      <blockquote>{{sentence}}</blockquote>
+      <button onclick="window.location.reload()">New Quote</button>
+    </div>
+  </body>
 </html>
